@@ -28,7 +28,7 @@ export default function App() {
         
         <MissionVision />
         
-        <Catalog />
+        {/* <Catalog /> */}
         
         <MarketLines />
         

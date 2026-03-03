@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logos/pcsmart-logo.png";
+import smartecLogo from "@/assets/logos/smartec.png";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,8 +42,14 @@ export const Navbar = () => {
       )}
     >
       <div className="mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <img src={logo} alt="PC Smart" className="h-24 md:h-28" />
+          <div className="h-12 md:h-16 w-px bg-[#1a4b8c]" />
+          <img
+            src={smartecLogo}
+            alt="Smartec"
+            className="h-16 md:h-20 object-contain"
+          />
         </div>
 
         {/* Desktop Nav */}
