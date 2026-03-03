@@ -84,7 +84,7 @@ export const Hero = () => {
         >
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=2070&auto=format&fit=crop"
+              src="https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/508556739_9688944687900397_8189433244645639311_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0327a3&_nc_ohc=H_fDnzk-I10Q7kNvwFaTkKU&_nc_oc=AdkMP_rdvu_pFTE8eQdmgxOIT8TNtPBBcXskqMJjWlYl6i0RfOiKkMY7L2MQ6kYaHYM&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=U2hj9RFKLEvBPSwF4yxKPA&_nc_ss=8&oh=00_AfzAzMZbx-M26NeW1Yhg5fHJPrjC25U7rQL7mnSkGBQGOg&oe=69AD07B1"
               alt="High-end Workstation"
               className="w-full h-auto object-cover"
             />

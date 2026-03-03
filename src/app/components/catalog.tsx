@@ -4,51 +4,45 @@ import { cn } from '@/lib/utils';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { Search, ChevronRight, Eye, ShoppingCart } from 'lucide-react';
 
-const categories = ["Todos", "Estaciones de Trabajo", "Portátiles", "Periféricos", "Redes"];
+const categories = ["Todos", "Portátiles", "Celulares","Tablets"];
 
 const products = [
   {
     id: 1,
-    name: "Torre Pro Empresarial",
-    category: "Estaciones de Trabajo",
-    price: "$1,299",
-    image: "https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=1000&auto=format&fit=crop",
+    name: "Celular 4G Quicktab",
+    category: "Celulares",
+    price: "$499.000",
+    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t1.6435-9/39442445_1662554963872783_1580941749004533760_n.png?stp=dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=IIYvZkSmqrMQ7kNvwFmprt4&_nc_oc=Adn293oxGtzXrm0SUj4fqr_8dqfoUTUTrqDakRj0jyRaYCsXIcrDiTbYy1b4Oo6KjTM&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=jcFbmqGNMtE_3bsBHBDdMQ&_nc_ss=8&oh=00_AfzYivMxTz-dxrN60oAwTGB4oORchxLDhcA7GJbZNZ7oAA&oe=69CE7E67",
   },
   {
     id: 2,
-    name: "BusinessBook X14",
-    category: "Portátiles",
-    price: "$899",
-    image: "https://images.unsplash.com/photo-1611186871348-b1ec696e5204?q=80&w=1000&auto=format&fit=crop",
+    name: "Phablet Touch Smart Quicktab",
+    category: "Tablets",
+    price: "$490.000",
+    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t1.6435-9/32926053_1541407039320910_7059838804739227648_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=NeDWc3W9s5EQ7kNvwEd_-_A&_nc_oc=AdkW5_M7128Kt3xBj7kVC8SVLRE2eYxVQXeeIyiO3IPx0xgJSiDAmtCUKt49IgH6tjA&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=dapV7oysE_x2wQLxrRzl7w&_nc_ss=8&oh=00_AfymfNGxMGk39ADFgM3Yv9Q-bjoxGhKGCXNvNI74fBXfvA&oe=69CE8DC7",
   },
   {
     id: 3,
-    name: "Mecánico Serie K",
-    category: "Periféricos",
-    price: "$129",
-    image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1000&auto=format&fit=crop",
+    name: "Celular Krone 4.5 ",
+    category: "Celulares",
+    price: "$499.900",
+    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/508176117_9695318997262966_8915332317308483502_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0327a3&_nc_ohc=9TOkZYd7p9IQ7kNvwGmll9o&_nc_oc=AdmWU5EpPWIAFZfxNJAKLJ1egQHa3n3BX_Singoe3N0p1ap-sVxggyoFW7xivRJADI8&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=lswU87-hw8cFjCuoQ53HwQ&_nc_ss=8&oh=00_AfwYcFbitQXGAnL5E7QIekYe06bkDOL6pWVux-j-0H7xCA&oe=69AD0982",
   },
   {
     id: 4,
-    name: "Mouse Precision M3",
-    category: "Periféricos",
-    price: "$79",
-    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1000&auto=format&fit=crop",
+    name: "Portatil 2 en 1 Touchsmart 360",
+    category: "Portátiles",
+    price: "$499.900",
+    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/508952910_9714384098689789_1980292592150919736_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=JC0ZhpDw-sUQ7kNvwEs1OkP&_nc_oc=AdkT_SfNsiIQx8fi0ptUOqqs-0gmofCBsRZ31ZwvVEPL3AeKwR_C0Cz4JBcfXODRox0&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=_Awqp6E_J29nSxr9Cq8IIA&_nc_ss=8&oh=00_AfxqCXET4NpZHIa7dgmKJ-ynrpWIyk1I1yfIF9qfa-4EXQ&oe=69ACE24C",
   },
   {
     id: 5,
-    name: "Rack de Servidor Alpha",
-    category: "Redes",
-    price: "$4,500",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    id: 6,
-    name: "Ultrabook Air",
+    name: "Portatil Airnote serie platinum",
     category: "Portátiles",
-    price: "$1,099",
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1000&auto=format&fit=crop",
+    price: "$999,000",
+    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/499039251_9713334318794767_1044177032346396282_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=q4WTsSsSOVgQ7kNvwHg8iei&_nc_oc=Adkq-ufE53YMAbI0BHdAhohCSEx6iR1-VYbkGw09SO5crVl22BaPz8gqfWlRh8WUpKs&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=JcTCRHMUHjkJ9vN_E9lDlQ&_nc_ss=8&oh=00_Afy-8OlnH-0FuBccPtU6pN6SnnXBPPReiCud2hFMOWzdsg&oe=69AD0824",
   },
+  
 ];
 
 export const Catalog = () => {
