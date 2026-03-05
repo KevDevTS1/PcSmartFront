@@ -53,23 +53,23 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-gray-700 hover:text-[#1a4b8c] transition-colors"
+              className="text-sm font-semibold text-[#1a4b8c] px-4 py-2 rounded-full border border-[#1a4b8c]/40 hover:bg-[#1a4b8c] hover:text-white hover:shadow-md transition-all"
             >
               {link.name}
             </a>
           ))}
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-[#1a4b8c] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#133a6e] transition-colors"
           >
             Ver Catálogo
-          </motion.button>
+          </motion.button> */}
         </nav>
 
         {/* Mobile Toggle */}
@@ -100,16 +100,18 @@ export const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium text-gray-800 flex items-center justify-between group"
+                  className="text-base font-semibold text-[#0f172a] flex items-center justify-between group px-4 py-2 rounded-full border border-[#1a4b8c]/30"
                 >
-                  {link.name}
+                  <span className="group-hover:text-[#1a4b8c] transition-colors">
+                    {link.name}
+                  </span>
                   <ChevronRight
                     size={18}
-                    className="text-gray-400 group-hover:text-[#1a4b8c] transition-colors"
+                    className="text-[#1a4b8c]/60 group-hover:text-[#1a4b8c] transition-colors"
                   />
                 </a>
               ))}
-              <button className="mt-4 bg-[#1a4b8c] text-white py-4 rounded-xl font-bold">
+              <button className="mt-4 bg-white text-[#1a4b8c] py-3 rounded-full font-bold border border-[#1a4b8c] shadow-sm">
                 Contáctanos
               </button>
             </div>

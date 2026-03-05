@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/lib/utils';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import img1 from '@/assets/catalog/smart360.png';
+import img2 from '@/assets/catalog/tablet.png';
+
 import { Search, ChevronRight, Eye, ShoppingCart } from 'lucide-react';
 
 const categories = ["Todos", "Portátiles", "Celulares","Tablets"];
@@ -16,10 +19,10 @@ const products = [
   },
   {
     id: 2,
-    name: "Phablet Touch Smart Quicktab",
+    name: "Tablet PC Smart Pro 8",
     category: "Tablets",
     price: "$490.000",
-    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t1.6435-9/32926053_1541407039320910_7059838804739227648_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=NeDWc3W9s5EQ7kNvwEd_-_A&_nc_oc=AdkW5_M7128Kt3xBj7kVC8SVLRE2eYxVQXeeIyiO3IPx0xgJSiDAmtCUKt49IgH6tjA&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=dapV7oysE_x2wQLxrRzl7w&_nc_ss=8&oh=00_AfymfNGxMGk39ADFgM3Yv9Q-bjoxGhKGCXNvNI74fBXfvA&oe=69CE8DC7",
+    image: img2,
   },
   {
     id: 3,
@@ -33,7 +36,7 @@ const products = [
     name: "Portatil 2 en 1 Touchsmart 360",
     category: "Portátiles",
     price: "$499.900",
-    image: "https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/508952910_9714384098689789_1980292592150919736_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=JC0ZhpDw-sUQ7kNvwEs1OkP&_nc_oc=AdkT_SfNsiIQx8fi0ptUOqqs-0gmofCBsRZ31ZwvVEPL3AeKwR_C0Cz4JBcfXODRox0&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=_Awqp6E_J29nSxr9Cq8IIA&_nc_ss=8&oh=00_AfxqCXET4NpZHIa7dgmKJ-ynrpWIyk1I1yfIF9qfa-4EXQ&oe=69ACE24C",
+    image: img1,
   },
   {
     id: 5,
@@ -113,10 +116,10 @@ export const Catalog = () => {
                   <p className="text-xs font-bold text-blue-600 uppercase mb-2">{product.category}</p>
                   <h4 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#1a4b8c] transition-colors">{product.name}</h4>
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-black text-slate-900">{product.price}</span>
-                    <button className="text-sm font-bold text-slate-500 hover:text-[#1a4b8c] flex items-center gap-1 transition-colors">
+                   {/* <span className="text-lg font-black text-slate-900">{product.price}</span> */}
+                    {/* <button className="text-sm font-bold text-slate-500 hover:text-[#1a4b8c] flex items-center gap-1 transition-colors">
                       Detalles <ChevronRight size={16} />
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </motion.div>

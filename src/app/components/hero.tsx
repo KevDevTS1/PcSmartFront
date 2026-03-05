@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { ArrowRight, ShoppingCart } from 'lucide-react';
-
+import imgHero from '@/assets/catalog/OnlyOne.png';
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-32 md:pt-36 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
@@ -39,7 +39,7 @@ export const Hero = () => {
             Computadoras de alto rendimiento, periféricos premium y soluciones de hardware de nivel empresarial diseñadas para profesionales y empresas modernas.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -55,7 +55,7 @@ export const Hero = () => {
             >
               Ver Catálogo
             </motion.button>
-          </div>
+          </div> */}
 
           <div className="mt-12 flex items-center gap-6">
             <div className="flex -space-x-3">
@@ -84,7 +84,7 @@ export const Hero = () => {
         >
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <ImageWithFallback
-              src="https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/508556739_9688944687900397_8189433244645639311_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0327a3&_nc_ohc=H_fDnzk-I10Q7kNvwFaTkKU&_nc_oc=AdkMP_rdvu_pFTE8eQdmgxOIT8TNtPBBcXskqMJjWlYl6i0RfOiKkMY7L2MQ6kYaHYM&_nc_zt=23&_nc_ht=scontent.fbog2-4.fna&_nc_gid=U2hj9RFKLEvBPSwF4yxKPA&_nc_ss=8&oh=00_AfzAzMZbx-M26NeW1Yhg5fHJPrjC25U7rQL7mnSkGBQGOg&oe=69AD07B1"
+              src={imgHero}
               alt="High-end Workstation"
               className="w-full h-auto object-cover"
             />
@@ -101,7 +101,7 @@ export const Hero = () => {
             </div>
             <div>
               <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Más Vendido</p>
-              <p className="font-bold text-slate-900">Workstation Pro M2</p>
+              <p className="font-bold text-slate-900">All in One Exhabyte G18</p>
             </div>
           </motion.div>
         </motion.div>

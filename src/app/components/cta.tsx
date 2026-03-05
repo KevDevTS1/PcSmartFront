@@ -81,7 +81,7 @@ export const CTA = () => {
             </motion.p>
 
             <div className="flex flex-col sm:flex-row gap-10 justify-center items-center">
-              <motion.button
+              {/* <motion.button
                 whileHover={{ 
                   scale: 1.08,
                   boxShadow: "0 30px 60px rgba(0,0,0,0.4)"
@@ -113,7 +113,7 @@ export const CTA = () => {
                 <MapPin size={26} className="text-blue-400 group-hover:animate-bounce" />
                 Ver Ubicaciones
                 <ArrowRight size={26} className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500" />
-              </motion.button>
+              </motion.button> */}
             </div>
 
             {/* Micro-interactions / Floating Badges */}
